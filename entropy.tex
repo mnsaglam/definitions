@@ -7,7 +7,7 @@
 \newcommand{\dmid}{\,\|\,}
 
 \newcommand{\muti}[2]
-    {{\mkern2mu}\mathbf{I}{\mkern-2mu}\left(#1{\mkern-1mu}\mathbin{:}{\mkern-1mu}#2\right)}   %mutual info
+    {{\nonscript\mkern2mu}\mathbf{I}{\nonscript\mkern-2mu}\left(#1{\nonscript\mkern-1mu}\mathbin{:}{\nonscript\mkern-1mu}#2\right)}   %mutual info
 
 \newcommand{\kldiv}[2]
     {\mathbf{D}{\mkern-2mu}\left(#1\,\middle\|\,#2\right)}
@@ -16,7 +16,7 @@
     {\mathbf{D}_2{\mkern-2mu}\left(#1\,\middle\|\,#2\right)}
 
 \newcommand{\ent}[1]
-    {\mathrm{H}{\mkern-2mu}\left(#1\right)}
+    {\mathrm{H}{\nonscript\mkern-2.7mu}\left(#1\right)}
 
 \newcommand{\entb}[1]
     {\mathrm{H}_2{\mkern-2mu}\left(#1\right)}
@@ -30,8 +30,17 @@
 \newcommand{\crydiv}[4]
     {\D_{#1}^{#2}\left(#3\,\middle\|\,#4\right)}
 
-\newcommand{\tsdiv}[3]
-    {\D^T_{#1}\!\left(#2\,\middle\|\,#3\right)}
+\newcommand{\tsdiv}[2]
+    {\bar{\mathbf{D}}{\mkern-2mu}\left(#1\,\middle\|\,#2\right)}
+
+\newcommand{\tsdivb}[2]
+    {\bar{\mathbf{D}}_2{\mkern-2mu}\left(#1\,\middle\|\,#2\right)}
 
 \newcommand{\ryent}[2]
     {\mathrm{H}_{#1}\left(#2\right)}
+
+\newcommand{\tsent}[1]
+    {\bar{\mathrm{H}}{\nonscript\mkern-2.7mu}\left(#1\right)}
+
+\newcommand{\tsmuti}[2]
+    {{\nonscript\mkern2mu}\bar{\mathbf{I}}{\nonscript\mkern-2mu}\left(#1{\nonscript\mkern-1mu}\mathbin{;}{\nonscript\mkern-1mu}#2\right)}
